@@ -4,13 +4,16 @@ import { connect } from "react-redux";
 import "./user.css";
 
 import * as userActions from "../../actions/userActions";
-import Spinner from "../general/spinner";
+import Spinner from "../general/spinner/spinner";
 import Fatal from "../general/fatal";
 import UserTable from "./userTable";
 
 class Users extends Component {
   componentDidMount() {
-    this.props.getAllUsers();
+    debugger;
+    if( this.props.users.length === 0) {
+      this.props.getAll();
+    }
   }
 
   render() {

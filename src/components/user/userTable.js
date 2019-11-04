@@ -1,7 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import "./../../css/index.css";
+import EyesIcon from "../general/icon/eyes/eyes";
 
 const UserTable = props => {
   const putRows = () =>
@@ -10,7 +12,7 @@ const UserTable = props => {
         <td>{name}</td>
         <td>{email}</td>
         <td>{website}</td>
-        <td>{key}</td>
+        <td><Link to={`/user/${key}/publications`}> <EyesIcon id={key} /> </Link></td>
       </tr>
     ));
   return (

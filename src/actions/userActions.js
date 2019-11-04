@@ -5,7 +5,8 @@ import {
   ERROR_TO_GET_ALL_USERS
 } from "../types/userTypes";
 
-export const getAllUsers = () => async dispatch => {
+export const getAll = () => async dispatch => {
+  debugger;
   try {
     dispatch({
       type: LOADING,

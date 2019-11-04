@@ -11,6 +11,7 @@ const INITIAL_STATE = {
 };
 
 export default (state = INITIAL_STATE, action) => {
+  debugger;
   switch (action.type) {
     case GET_ALL_USERS:
       return {
