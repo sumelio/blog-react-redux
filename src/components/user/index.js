@@ -11,7 +11,7 @@ import UserTable from "./userTable";
 class Users extends Component {
   componentDidMount() {
     debugger;
-    if( this.props.users.length === 0) {
+    if( ! this.props.users.length) {
       this.props.getAll();
     }
   }

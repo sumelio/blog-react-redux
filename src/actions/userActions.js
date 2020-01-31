@@ -6,7 +6,6 @@ import {
 } from "../types/userTypes";
 
 export const getAll = () => async dispatch => {
-  debugger;
   try {
     dispatch({
       type: LOADING,

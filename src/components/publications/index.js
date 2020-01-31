@@ -11,8 +11,6 @@ const { getUserById } = publicationActions;
 class Publications extends Component {
     
     async componentDidMount() {
-        debugger;
-        console.log('this.props.users', this.props);
         if (this.props.userReducer.users.length === 0) {
             await this.props.usersGetAll();
         }
@@ -20,11 +18,14 @@ class Publications extends Component {
         this.props.getUserById(this.props.match.params.key);
     }
     render() {
-        console.log('this.props',this.props)
         if (this.props.publicationReducer.loading) {
             return ( <Spinner />);
           }
-        console.log('this.props.users',this.props.publicationReducer.publications)
+
+        const userId = parseInt(this.props.match.params.key, 10) + 1;
+        console.log(`publications of ${this.props.match.params.key + 1}`,
+            this.props.publicationReducer
+            .publications.filter(p => p.userId ===  userId) );
         return (
             <div>
                 <h1>

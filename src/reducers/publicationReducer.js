@@ -19,7 +19,7 @@ export default (state = INITIAL_STATE, action) => {
       case GET_PUBLICATION_BY_USER:
         return {
           ...state,
-          publications: state.publications.push( action.payload ),
+          publications: action.payload,
           loading: false,
           error: null
         };
