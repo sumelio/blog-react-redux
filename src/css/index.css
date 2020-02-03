@@ -42,3 +42,33 @@ body {
     width: 100%;
     height: 70vh;
 }
+
+.fatal {
+	color: red;
+}
+
+.publication {
+	border: solid  #BDE8FC 2px;
+	margin: 15px;
+	border-radius: 15px;
+	padding: 5px;
+	background-color: #BDE8FC;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+cursor: pointer;
+}
+
+li {
+	margin: 15px 0;
+}
+
+.contentTasks {
+	font-size: 20px;
+	margin-left: 50px;
+	margin-bottom: 70px;
+}
+
+.buttonTask {
+	margin-left: 20px;
+}

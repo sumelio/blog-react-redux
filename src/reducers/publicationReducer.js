@@ -1,4 +1,4 @@
-import { GET_ALL_PUBLICATION,  ERROR_TO_GET_ALL_PUBLICATION, GET_PUBLICATION_BY_USER, LOADING_PUBLICATIONS } from "../types/publicationTypes";
+import { GET_ALL_PUBLICATION,  ERROR_TO_GET_ALL_PUBLICATION, UPDATED_USER_PUB, LOADING_PUBLICATIONS } from "../types/publicationTypes";
 
 const INITIAL_STATE = {
   publications: [],
@@ -7,7 +7,7 @@ const INITIAL_STATE = {
 };
 
 export default (state = INITIAL_STATE, action) => {
-  debugger;
+   
   switch (action.type) {
     case GET_ALL_PUBLICATION:
       return {
@@ -16,7 +16,7 @@ export default (state = INITIAL_STATE, action) => {
         loading: false,
         error: null
       };
-      case GET_PUBLICATION_BY_USER:
+      case UPDATED_USER_PUB:
         return {
           ...state,
           publications: action.payload,

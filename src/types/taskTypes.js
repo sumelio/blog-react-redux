@@ -1,0 +1,7 @@
+export const GET_ALL_TASKS = 'GET_ALL_TASKS';
+export const LOADING = 'LOADING';
+export const ERROR_TO_GET_ALL_TASKS = 'ERROR_TO_GET_ALL_TASKS';
+export const CHANGE_USER_ID = 'CHANGE_USER_ID';
+export const CHANGE_TITLE = 'CHANGE_TITLE';
+export const ADD_TASK_SUCCESS = 'ADD_TASK_SUCCESS';
+export const RESET_SAVE = 'RESET_SAVE';
